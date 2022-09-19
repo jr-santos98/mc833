@@ -1,10 +1,10 @@
 all: cliente servidor
 
 cliente: cliente.c
-	gcc -Werror -Wall -g -lm -c cliente.c -o cliente
+	gcc cliente.c -Werror -Wall -o cliente
 
 servidor: servidor.c
-	gcc -Werror -Wall -g -lm -c servidor.c -o servidor
+	gcc servidor.c -Werror -Wall -o servidor
 
 clean:
 	rm -f cliente servidor
