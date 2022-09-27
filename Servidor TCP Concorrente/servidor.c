@@ -30,7 +30,7 @@ int main (int argc, char **argv) {
     bzero(&servaddr, sizeof(servaddr));
     servaddr.sin_family      = AF_INET;
     servaddr.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
-    servaddr.sin_port        = htons(2222);   
+    servaddr.sin_port        = htons(2022);   
     
     
 
@@ -68,6 +68,7 @@ int main (int argc, char **argv) {
 
         read(connfd, client_message, 1000);
         printf("recieved message: %s \n", client_message);
+        sleep(6);
         close(connfd);
 
     }
