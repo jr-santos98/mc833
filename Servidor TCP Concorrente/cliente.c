@@ -25,10 +25,11 @@ int main(int argc, char **argv) {
     nAddrLen = sizeof(struct sockaddr_in);
     
 
-    if (argc != 2) {
+    if (argc != 3) {
         strcpy(error,"uso: ");
         strcat(error,argv[0]);
         strcat(error," <IPaddress>");
+        strcat(error," <Port>");
         perror(error);
         exit(1);
     }

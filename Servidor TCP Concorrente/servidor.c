@@ -21,11 +21,19 @@ int main (int argc, char **argv) {
     char   buf[MAXDATASIZE];
     char   ip[16];
     char   received_msg[MAXCHAR];
+    char   error[MAXCHAR + 1];
     time_t ticks;
-    unsigned int port;
+    unsigned int port, received_port;
     socklen_t nAddr2Len;
     nAddr2Len = sizeof(struct sockaddr_in);
 
+    if (argc != 2) {
+        strcpy(error,"uso: ");
+        strcat(error,argv[0]);
+        strcat(error," <Port>");
+        perror(error);
+        exit(1);
+    }
 
     if ((listenfd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
         perror("socket");
@@ -33,9 +41,10 @@ int main (int argc, char **argv) {
     }
 
     bzero(&servaddr, sizeof(servaddr));
+    received_port = atoi(argv[1]);
     servaddr.sin_family      = AF_INET;
     servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
-    servaddr.sin_port        = htons(2022);
+    servaddr.sin_port        = htons(received_port);
 
     if (bind(listenfd, (struct sockaddr *)&servaddr, sizeof(servaddr)) == -1) {
         perror("bind");
@@ -59,17 +68,23 @@ int main (int argc, char **argv) {
 		port = ntohs(servaddr2.sin_port);
 		printf("IP: %s\n", ip);
 		printf("Porta: %u\n", port);
-
         ticks = time(NULL);
+        printf("Connection Time: %.24s\r\n", ctime(&ticks));
+
         snprintf(buf, sizeof(buf), "Hello from server!\nTime: %.24s\r\n", ctime(&ticks));
         write(connfd, buf, strlen(buf));
 
         // Read message
         read(connfd, received_msg, MAXCHAR);
         printf("Message: %s \n", received_msg);
-        *received_msg = '\0';
+        // *received_msg = '\0';
+        // char received_msg = {'\0'};
+        memset(&received_msg, 0, sizeof(received_msg));
+        // memset_s(received_msg, sizeof(received_msg), '\0', sizeof(received_msg));
 
         sleep(8);
+        ticks = time(NULL);
+        printf("Disconnection Time: %.24s\r\n", ctime(&ticks));
         close(connfd);
     }
     return(0);
