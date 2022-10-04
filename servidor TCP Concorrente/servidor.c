@@ -12,6 +12,7 @@
 
 #define LISTENQ 10
 #define MAXCHAR 100
+#define MAXLINE 4096
 
 int main (int argc, char **argv) {
     int    listenfd, connfd;
@@ -20,7 +21,7 @@ int main (int argc, char **argv) {
     char   buf[MAXCHAR];
     char   ip[16];
     char   commands[5][MAXCHAR];
-    char   received_msg[MAXCHAR];
+    char   received_msg[MAXLINE];
     char   error[MAXCHAR + 1];
     time_t ticks;
     unsigned int port, received_port;
@@ -88,7 +89,7 @@ int main (int argc, char **argv) {
 
             // Read command
             read(connfd, received_msg, MAXCHAR);
-            printf("Result: %s", received_msg);
+            printf("Result: %s\n%s", commands[i], received_msg);
             memset(&received_msg, 0, sizeof(received_msg));
         }
 
