@@ -11,15 +11,15 @@
 #include <arpa/inet.h>
 
 #define LISTENQ 10
-#define MAXDATASIZE 100
-#define MAXCHAR 1000
+#define MAXCHAR 100
 
 int main (int argc, char **argv) {
     int    listenfd, connfd;
     struct sockaddr_in servaddr;
     struct sockaddr_in servaddr2;
-    char   buf[MAXDATASIZE];
+    char   buf[MAXCHAR];
     char   ip[16];
+    char   commands[5][MAXCHAR];
     char   received_msg[MAXCHAR];
     char   error[MAXCHAR + 1];
     time_t ticks;
@@ -71,21 +71,32 @@ int main (int argc, char **argv) {
         ticks = time(NULL);
         printf("Connection Time: %.24s\r\n", ctime(&ticks));
 
+        // Write message
         snprintf(buf, sizeof(buf), "Hello from server!\nTime: %.24s\r\n", ctime(&ticks));
         write(connfd, buf, strlen(buf));
 
-        // Read message
-        read(connfd, received_msg, MAXCHAR);
-        printf("Message: %s \n", received_msg);
-        // *received_msg = '\0';
-        // char received_msg = {'\0'};
-        memset(&received_msg, 0, sizeof(received_msg));
-        // memset_s(received_msg, sizeof(received_msg), '\0', sizeof(received_msg));
+        // commands
+        strcpy(commands[0], "pwd\0"); 
+        strcpy(commands[1], "ls\0");
+        strcpy(commands[2], "hostname\0");
+        strcpy(commands[3], "neofetch\0");
+        strcpy(commands[4], "exit\0");
 
-        sleep(8);
+        // Send commands
+        for (int i=0; i<5; i++) {
+            write(connfd, commands[i], strlen(commands[i]));
+
+            // Read command
+            read(connfd, received_msg, MAXCHAR);
+            printf("Result: %s", received_msg);
+            memset(&received_msg, 0, sizeof(received_msg));
+        }
+
+        // sleep(8);
         ticks = time(NULL);
         printf("Disconnection Time: %.24s\r\n", ctime(&ticks));
-        close(connfd);
+        // close(connfd);
     }
-    return(0);
+    
+    return 0;
 }

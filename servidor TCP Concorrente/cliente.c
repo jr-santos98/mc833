@@ -11,15 +11,15 @@
 #include <unistd.h>
 
 #define MAXLINE 4096
-#define MAXCHAR 1000
+#define MAXCHAR 100
 
 int main(int argc, char **argv) {
     int    sockfd, n;
     char   recvline[MAXLINE + 1];
     char   error[MAXLINE + 1];
-    unsigned int port;
     char   ip[16];
     char   msg[MAXCHAR];
+    unsigned int port, received_port;
     struct sockaddr_in servaddr;
     socklen_t nAddrLen;
     nAddrLen = sizeof(struct sockaddr_in);
@@ -40,8 +40,9 @@ int main(int argc, char **argv) {
     }
 
     bzero(&servaddr, sizeof(servaddr));
+    received_port = atoi(argv[2]);
     servaddr.sin_family = AF_INET;
-    servaddr.sin_port   = htons(2022);
+    servaddr.sin_port   = htons(received_port);
     
     if (inet_pton(AF_INET, argv[1], &servaddr.sin_addr) <= 0) {
         perror("inet_pton error");
@@ -67,9 +68,14 @@ int main(int argc, char **argv) {
             exit(1);
         }
 
+        printf("\n");
+
+        if (strcmp(recvline, "exit") == 0) {
+            break;
+        }
+
         // Read msg
         printf("Enter with message: ");
-        //scanf("%s", msg);
         fgets(msg, MAXCHAR, stdin);
 
         // Send msg
@@ -84,5 +90,7 @@ int main(int argc, char **argv) {
         exit(1);
     }
 
-    exit(0);
+    close(sockfd);
+
+    return 0;
 }
