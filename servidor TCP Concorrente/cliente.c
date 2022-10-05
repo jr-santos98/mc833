@@ -56,12 +56,16 @@ int main(int argc, char **argv) {
         exit(1);
     }
 
-    // Get Ip and Port of Server
+    // Get Ip and Port of Client
     getsockname(sockfd, (struct sockaddr *) &servaddr, &nAddrLen);
     inet_ntop(AF_INET, &servaddr.sin_addr, ip, sizeof(ip));
     port = ntohs(servaddr.sin_port);
+    printf("Client: \n");
     printf("IP: %s\n", ip);
     printf("Porta local: %u\n", port);
+    printf("Server: \n");
+    printf("IP: %s\n", argv[1]);
+    printf("Porta local: %u\n", received_port);
 
     while ( (n = read(sockfd, recvline, MAXLINE)) > 0) {
         recvline[n] = 0;
