@@ -18,8 +18,9 @@ int main (int argc, char **argv) {
     int    listenfd, connfd;
     struct sockaddr_in servaddr;
     struct sockaddr_in servaddr2;
-    char   buf[MAXCHAR];
+    // char   buf[MAXCHAR];
     char   ip[16];
+    char   port_str[10];
     char   commands[5][MAXCHAR];
     char   received_msg[MAXLINE];
     char   error[MAXCHAR + 1];
@@ -27,6 +28,7 @@ int main (int argc, char **argv) {
     unsigned int port, received_port;
     socklen_t nAddr2Len;
     nAddr2Len = sizeof(struct sockaddr_in);
+    FILE *fp;
 
     if (argc != 2) {
         strcpy(error,"uso: ");
@@ -57,7 +59,7 @@ int main (int argc, char **argv) {
         exit(1);
     }
 
-    for ( ; ; ) {
+    while (1) {
       if ((connfd = accept(listenfd, (struct sockaddr *) NULL, NULL)) == -1 ) {
         perror("accept");
         exit(1);
@@ -69,17 +71,37 @@ int main (int argc, char **argv) {
 		port = ntohs(servaddr2.sin_port);
 		printf("IP: %s\n", ip);
 		printf("Porta: %u\n", port);
+
+        // Escrevendo no arquivo
+        fp = fopen("result.txt", "a+");  // Cria um arquivo texto para gravação
+        if (fp == NULL) { // Se não conseguiu criar
+            printf("Problemas na CRIACAO do arquivo\n");
+            exit(1);
+        }
+        fputs("------------------------------------\n", fp);
+        fputs("IP: ", fp);
+        fputs(ip, fp);
+        fputs("\n", fp);
+        fputs("Porta: ", fp);
+        sprintf(port_str, "%d", port);
+        fputs(port_str, fp);
+        fputs("\n", fp);
+        fclose(fp);
+
         ticks = time(NULL);
         printf("Connection Time: %.24s\r\n", ctime(&ticks));
 
         // Write message
-        snprintf(buf, sizeof(buf), "Hello from server!\nTime: %.24s\r\n", ctime(&ticks));
-        write(connfd, buf, strlen(buf));
+        // snprintf(buf, sizeof(buf), "Hello from server!\nTime: %.24s\r\n", ctime(&ticks));
+        // write(connfd, buf, strlen(buf));
 
         // commands
         strcpy(commands[0], "pwd\0"); 
         strcpy(commands[1], "ls\0");
         strcpy(commands[2], "hostname\0");
+        // commands[3] -> Para entrega
+        // strcpy(commands[3], "uname -a\0");
+        // commands[3] -> Para testes
         strcpy(commands[3], "neofetch\0");
         strcpy(commands[4], "exit\0");
 
@@ -88,8 +110,26 @@ int main (int argc, char **argv) {
             write(connfd, commands[i], strlen(commands[i]));
 
             // Read command
-            read(connfd, received_msg, MAXCHAR);
-            printf("Result: %s\n%s", commands[i], received_msg);
+            read(connfd, received_msg, MAXLINE);
+
+            // int result;
+            // char Str[MAXLINE];
+
+            fp = fopen("result.txt", "a+");  // Cria um arquivo texto para gravação
+            if (fp == NULL) { // Se não conseguiu criar
+                printf("Problemas na CRIACAO do arquivo\n");
+                exit(1);
+            }
+            // strcpy(Str, received_msg);
+            // printf("Result: %s\n%s", commands[i], received_msg);
+            
+            fputs("Result: ", fp);
+            fputs(commands[i], fp);
+            fputs("\n", fp);
+            fputs(received_msg, fp);
+
+            fclose(fp);
+
             memset(&received_msg, 0, sizeof(received_msg));
         }
 

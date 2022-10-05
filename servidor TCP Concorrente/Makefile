@@ -7,4 +7,4 @@ servidor: servidor.c
 	gcc servidor.c -Wall -g -o servidor
 
 clean:
-	rm -f cliente servidor
+	rm -f cliente servidor result.txt

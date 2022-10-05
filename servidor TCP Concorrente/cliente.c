@@ -18,8 +18,7 @@ int main(int argc, char **argv) {
     char   recvline[MAXLINE + 1];
     char   error[MAXLINE + 1];
     char   ip[16];
-    // char   msg[MAXCHAR];
-    char   output[MAXLINE];
+    char   msg[MAXLINE];
     unsigned int port, received_port;
     struct sockaddr_in servaddr;
     socklen_t nAddrLen;
@@ -66,12 +65,12 @@ int main(int argc, char **argv) {
 
     while ( (n = read(sockfd, recvline, MAXLINE)) > 0) {
         recvline[n] = 0;
-        // output[0] = '\0';
+        // msg[0] = '\0';
+        printf("Executando: ");
         if (fputs(recvline, stdout) == EOF) {
             perror("fputs error");
             exit(1);
         }
-
         printf("\n");
 
         if (strcmp(recvline, "exit") == 0) {
@@ -85,27 +84,27 @@ int main(int argc, char **argv) {
             exit(1);
         }
 
-        /* Read the output a line at a time - output it. */
+        /* Read the msg a line at a time - msg it. */
         while (fgets(path, sizeof(path), fp) != NULL) {
-            strcat(output, path);
-            printf("%s", path);
+            strcat(msg, path);
+            // printf("%s", path);
         }
 
         /* close */
         pclose(fp);
 
         // Read msg
-        printf("output: %s", output);
+        // printf("msg: %s", msg);
         // fgets(msg, MAXCHAR, stdin);
 
         // Send msg
-        if(send(sockfd, output, strlen(output), 0) < 0) {
+        if(send(sockfd, msg, strlen(msg), 0) < 0) {
             perror("send error");
             exit(1);
         }
-        // if (output[0] != '\0')
-        memset(&output, '\0', sizeof(output));
-        // sleep(2);
+        // if (msg[0] != '\0')
+        memset(&msg, '\0', sizeof(msg));
+        sleep(rand() % 5);
     }
 
     if (n < 0) {
