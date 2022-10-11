@@ -1,37 +1,18 @@
 ---------- Client: 1 ----------
 IP: 127.0.0.1
-Porta: 49856
-Connection Time: Tue Oct 11 02:56:30 2022 from Client 1
+Porta: 45898
+Connection Time: Tue Oct 11 03:25:57 2022 from Client 1
 ---------- Client: 1 ----------
 Result: pwd
 /home/junior/Documentos/git/mc833/servidor TCP Concorrente
 ---------- Client: 2 ----------
 IP: 127.0.0.1
-Porta: 49866
-Connection Time: Tue Oct 11 02:56:32 2022 from Client 2
+Porta: 45908
+Connection Time: Tue Oct 11 03:25:59 2022 from Client 2
 ---------- Client: 2 ----------
 Result: pwd
 /home/junior/Documentos/git/mc833/servidor TCP Concorrente
 ---------- Client: 1 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
----------- Client: 1 ----------
-Result: hostname
-garuda
----------- Client: 3 ----------
-IP: 127.0.0.1
-Porta: 49872
-Connection Time: Tue Oct 11 02:56:35 2022 from Client 3
----------- Client: 3 ----------
-Result: pwd
-/home/junior/Documentos/git/mc833/servidor TCP Concorrente
----------- Client: 2 ----------
 Result: ls
 cliente
 cliente.c
@@ -41,110 +22,29 @@ result.txt
 servidor
 servidor.c
 ---------- Client: 1 ----------
+Result: hostname
+garuda
+---------- Client: 2 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 2 ----------
+Result: hostname
+garuda
+---------- Client: 1 ----------
 Result: uname -a
 Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
 ---------- Client: 1 ----------
 Result: exit
-Disconnection Time: Tue Oct 11 02:56:36 2022 from Client 1
----------- Client: 2 ----------
-Result: hostname
-garuda
----------- Client: 3 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
+Disconnection Time: Tue Oct 11 03:26:03 2022 from Client 1
 ---------- Client: 2 ----------
 Result: uname -a
 Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
 ---------- Client: 2 ----------
 Result: exit
-Disconnection Time: Tue Oct 11 02:56:38 2022 from Client 2
----------- Client: 3 ----------
-Result: hostname
-garuda
----------- Client: 4 ----------
-IP: 127.0.0.1
-Porta: 46532
-Connection Time: Tue Oct 11 02:56:39 2022 from Client 4
----------- Client: 4 ----------
-Result: pwd
-/home/junior/Documentos/git/mc833/servidor TCP Concorrente
----------- Client: 3 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
----------- Client: 3 ----------
-Result: exit
-Disconnection Time: Tue Oct 11 02:56:41 2022 from Client 3
----------- Client: 4 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
----------- Client: 4 ----------
-Result: hostname
-garuda
----------- Client: 5 ----------
-IP: 127.0.0.1
-Porta: 46544
-Connection Time: Tue Oct 11 02:56:44 2022 from Client 5
----------- Client: 5 ----------
-Result: pwd
-/home/junior/Documentos/git/mc833/servidor TCP Concorrente
----------- Client: 4 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
----------- Client: 4 ----------
-Result: exit
-Disconnection Time: Tue Oct 11 02:56:45 2022 from Client 4
----------- Client: 6 ----------
-IP: 127.0.0.1
-Porta: 46554
-Connection Time: Tue Oct 11 02:56:46 2022 from Client 6
----------- Client: 6 ----------
-Result: pwd
-/home/junior/Documentos/git/mc833/servidor TCP Concorrente
----------- Client: 5 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
----------- Client: 5 ----------
-Result: hostname
-garuda
----------- Client: 6 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
----------- Client: 5 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
----------- Client: 5 ----------
-Result: exit
-Disconnection Time: Tue Oct 11 02:56:50 2022 from Client 5
----------- Client: 6 ----------
-Result: hostname
-garuda
----------- Client: 6 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
----------- Client: 6 ----------
-Result: exit
-Disconnection Time: Tue Oct 11 02:56:52 2022 from Client 6
+Disconnection Time: Tue Oct 11 03:26:05 2022 from Client 2

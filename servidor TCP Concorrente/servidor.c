@@ -18,12 +18,12 @@ int main (int argc, char **argv) {
     int    listenfd, connfd, id;
     struct sockaddr_in servaddr;
     struct sockaddr_in servaddr2;
-    // char   buf[MAXCHAR];
     char   ip[16];
-    // char   port_str[10];
     char   commands[5][MAXCHAR];
     char   received_msg[MAXLINE];
     char   error[MAXCHAR + 1];
+    // char   buf[MAXCHAR];
+    // char   port_str[10];
     pid_t pid;
     time_t ticks;
     unsigned int port, received_port;
@@ -118,6 +118,13 @@ int main (int argc, char **argv) {
 
             // Send commands
             for (int i=0; i<5; i++) {
+                // Progress per client
+                printf("Client: %d\n", id);
+		        printf("IP: %s\n", ip);
+		        printf("Porta: %u\n", port);
+                printf("Exec: %s\n", commands[i]);
+                printf("--------------------\n");
+                // Send command[i]
                 write(connfd, commands[i], strlen(commands[i]));
 
                 // Read command

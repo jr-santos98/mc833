@@ -69,12 +69,12 @@ int main(int argc, char **argv) {
 
     while ( (n = read(sockfd, recvline, MAXLINE)) > 0) {
         recvline[n] = 0;
-        // msg[0] = '\0';
         printf("Executando: ");
         if (fputs(recvline, stdout) == EOF) {
             perror("fputs error");
             exit(1);
         }
+        printf(" %ld", strlen(recvline));
         printf("\n");
 
         if (strcmp(recvline, "exit") == 0) {
@@ -106,7 +106,6 @@ int main(int argc, char **argv) {
             perror("send error");
             exit(1);
         }
-        // if (msg[0] != '\0')
         memset(&msg, '\0', sizeof(msg));
         sleep(rand() % 5);
     }
