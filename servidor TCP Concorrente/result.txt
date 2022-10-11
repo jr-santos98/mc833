@@ -1,0 +1,138 @@
+---------- Client: 1 ----------
+IP: 127.0.0.1
+Porta: 50984
+---------- Client: 1 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 2 ----------
+IP: 127.0.0.1
+Porta: 50994
+---------- Client: 2 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 1 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 1 ----------
+Result: hostname
+garuda
+---------- Client: 3 ----------
+IP: 127.0.0.1
+Porta: 51004
+---------- Client: 3 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 2 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 1 ----------
+Result: uname -a
+Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
+---------- Client: 1 ----------
+Result: exit
+---------- Client: 2 ----------
+Result: hostname
+garuda
+---------- Client: 3 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 2 ----------
+Result: uname -a
+Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
+---------- Client: 2 ----------
+Result: exit
+---------- Client: 3 ----------
+Result: hostname
+garuda
+---------- Client: 3 ----------
+Result: uname -a
+Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
+---------- Client: 3 ----------
+Result: exit
+---------- Client: 4 ----------
+IP: 127.0.0.1
+Porta: 49394
+---------- Client: 4 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 5 ----------
+IP: 127.0.0.1
+Porta: 49410
+---------- Client: 5 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 4 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 4 ----------
+Result: hostname
+garuda
+---------- Client: 6 ----------
+IP: 127.0.0.1
+Porta: 49420
+---------- Client: 6 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 5 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 4 ----------
+Result: uname -a
+Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
+---------- Client: 4 ----------
+Result: exit
+---------- Client: 5 ----------
+Result: hostname
+garuda
+---------- Client: 6 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 5 ----------
+Result: uname -a
+Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
+---------- Client: 5 ----------
+Result: exit
+---------- Client: 6 ----------
+Result: hostname
+garuda
+---------- Client: 6 ----------
+Result: uname -a
+Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
+---------- Client: 6 ----------
+Result: exit

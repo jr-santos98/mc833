@@ -18,9 +18,7 @@ int main (int argc, char **argv) {
     int    listenfd, connfd, id;
     struct sockaddr_in servaddr;
     struct sockaddr_in servaddr2;
-    // char   buf[MAXCHAR];
     char   ip[16];
-    // char   port_str[10];
     char   commands[5][MAXCHAR];
     char   received_msg[MAXLINE];
     char   error[MAXCHAR + 1];
@@ -87,22 +85,11 @@ int main (int argc, char **argv) {
             }
             fprintf(fp, "---------- Client: %d ----------\n", id);
             fprintf(fp, "IP: %s\n", ip);
-            // fputs("IP: ", fp);
-            // fputs(ip, fp);
-            // fputs("\n", fp);
             fprintf(fp, "Porta: %d\n", port);
-            // fputs("Porta: ", fp);
-            // sprintf(port_str, "%d", port);
-            // fputs(port_str, fp);
-            // fputs("\n", fp);
             fclose(fp);
 
             ticks = time(NULL);
             printf("Connection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
-
-            // Write message
-            // snprintf(buf, sizeof(buf), "Hello from server!\nTime: %.24s\r\n", ctime(&ticks));
-            // write(connfd, buf, strlen(buf));
 
             // commands
             strcpy(commands[0], "pwd\0"); 
@@ -121,35 +108,23 @@ int main (int argc, char **argv) {
                 // Read command
                 read(connfd, received_msg, MAXLINE);
 
-                // int result;
-                // char Str[MAXLINE];
-
                 fp = fopen("result.txt", "a+");
                 if (fp == NULL) {
                     printf("Problemas na CRIACAO do arquivo\n");
                     exit(1);
                 }
-                // strcpy(Str, received_msg);
-                // printf("Result: %s\n%s", commands[i], received_msg);
 
                 fprintf(fp, "---------- Client: %d ----------\n", id);
                 fprintf(fp, "Result: %s\n%s", commands[i], received_msg);
-                // fputs("Result: ", fp);
-                // fputs(commands[i], fp);
-                // fputs("\n", fp);
-                // fputs(received_msg, fp);
 
                 fclose(fp);
 
                 memset(&received_msg, 0, sizeof(received_msg));
             }
 
-            // sleep(8);
             ticks = time(NULL);
             printf("Disconnection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
-            // id++;
             exit(0);
-            // close(connfd);
         }
     }
     
