@@ -9,9 +9,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 #define MAXLINE 4096
-#define MAXCHAR 100
 
 int main(int argc, char **argv) {
     int    sockfd, n;
@@ -19,13 +17,13 @@ int main(int argc, char **argv) {
     char   error[MAXLINE + 1];
     char   ip[16];
     char   msg[MAXLINE];
+    char   str_M;
     unsigned int port, received_port;
     struct sockaddr_in servaddr;
     socklen_t nAddrLen;
     FILE *fp;
     char path[1035];
     nAddrLen = sizeof(struct sockaddr_in);
-    
 
     if (argc != 3) {
         strcpy(error,"uso: ");
@@ -70,11 +68,16 @@ int main(int argc, char **argv) {
     while ( (n = read(sockfd, recvline, MAXLINE)) > 0) {
         recvline[n] = 0;
         printf("Executando: ");
-        if (fputs(recvline, stdout) == EOF) {
-            perror("fputs error");
-            exit(1);
+        // if (fputs(recvline, stdout) == EOF) {
+        //     perror("fputs error");
+        //     exit(1);
+        // }
+        for (int i=strlen(recvline)-1; i>=0; i--) {
+            str_M = recvline[i];
+            if (str_M > 96 && str_M < 123)
+                str_M = recvline[i] - 32;
+            printf("%c", str_M);
         }
-        printf(" %ld", strlen(recvline));
         printf("\n");
 
         if (strcmp(recvline, "exit") == 0) {
@@ -91,15 +94,10 @@ int main(int argc, char **argv) {
         /* Read the msg a line at a time - msg it. */
         while (fgets(path, sizeof(path), fp) != NULL) {
             strcat(msg, path);
-            // printf("%s", path);
         }
 
-        /* close */
+        /* close file */
         pclose(fp);
-
-        // Read msg
-        // printf("msg: %s", msg);
-        // fgets(msg, MAXCHAR, stdin);
 
         // Send msg
         if(send(sockfd, msg, strlen(msg), 0) < 0) {

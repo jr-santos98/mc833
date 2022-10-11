@@ -9,9 +9,7 @@
 #include <time.h>
 #include <unistd.h>
 #include <arpa/inet.h>
-
 #define LISTENQ 10
-#define MAXCHAR 100
 #define MAXLINE 4096
 
 int main (int argc, char **argv) {
@@ -19,11 +17,9 @@ int main (int argc, char **argv) {
     struct sockaddr_in servaddr;
     struct sockaddr_in servaddr2;
     char   ip[16];
-    char   commands[5][MAXCHAR];
+    char   commands[5][MAXLINE];
     char   received_msg[MAXLINE];
-    char   error[MAXCHAR + 1];
-    // char   buf[MAXCHAR];
-    // char   port_str[10];
+    char   error[MAXLINE + 1];
     pid_t pid;
     time_t ticks;
     unsigned int port, received_port;
@@ -91,20 +87,9 @@ int main (int argc, char **argv) {
             }
             fprintf(fp, "---------- Client: %d ----------\n", id);
             fprintf(fp, "IP: %s\n", ip);
-            // fputs("IP: ", fp);
-            // fputs(ip, fp);
-            // fputs("\n", fp);
             fprintf(fp, "Porta: %d\n", port);
-            // fputs("Porta: ", fp);
-            // sprintf(port_str, "%d", port);
-            // fputs(port_str, fp);
-            // fputs("\n", fp);
             fprintf(fp, "Connection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
             fclose(fp);
-
-            // Write message
-            // snprintf(buf, sizeof(buf), "Hello from server!\nTime: %.24s\r\n", ctime(&ticks));
-            // write(connfd, buf, strlen(buf));
 
             // commands
             strcpy(commands[0], "pwd\0"); 
@@ -135,22 +120,15 @@ int main (int argc, char **argv) {
                     printf("Problemas na CRIACAO do arquivo\n");
                     exit(1);
                 }
-                // strcpy(Str, received_msg);
-                // printf("Result: %s\n%s", commands[i], received_msg);
 
                 fprintf(fp, "---------- Client: %d ----------\n", id);
                 fprintf(fp, "Result: %s\n%s", commands[i], received_msg);
-                // fputs("Result: ", fp);
-                // fputs(commands[i], fp);
-                // fputs("\n", fp);
-                // fputs(received_msg, fp);
 
                 fclose(fp);
 
                 memset(&received_msg, 0, sizeof(received_msg));
             }
 
-            // sleep(8);
             ticks = time(NULL);
             // printf("Disconnection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
 
@@ -164,7 +142,6 @@ int main (int argc, char **argv) {
             fclose(fp);
 
             exit(0);
-            // close(connfd);
         }
     }
     
