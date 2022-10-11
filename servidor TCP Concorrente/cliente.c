@@ -69,7 +69,6 @@ int main(int argc, char **argv) {
 
     while ( (n = read(sockfd, recvline, MAXLINE)) > 0) {
         recvline[n] = 0;
-        // msg[0] = '\0';
         printf("Executando: ");
         if (fputs(recvline, stdout) == EOF) {
             perror("fputs error");
@@ -91,22 +90,16 @@ int main(int argc, char **argv) {
         /* Read the msg a line at a time - msg it. */
         while (fgets(path, sizeof(path), fp) != NULL) {
             strcat(msg, path);
-            // printf("%s", path);
         }
 
-        /* close */
+        /* close file */
         pclose(fp);
-
-        // Read msg
-        // printf("msg: %s", msg);
-        // fgets(msg, MAXCHAR, stdin);
 
         // Send msg
         if(send(sockfd, msg, strlen(msg), 0) < 0) {
             perror("send error");
             exit(1);
         }
-        // if (msg[0] != '\0')
         memset(&msg, '\0', sizeof(msg));
         sleep(rand() % 5);
     }
