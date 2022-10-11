@@ -75,9 +75,13 @@ int main (int argc, char **argv) {
             getpeername(connfd, (struct sockaddr * )&servaddr2, &nAddr2Len);
 		    inet_ntop(AF_INET, &servaddr2.sin_addr, ip, sizeof(ip));
 		    port = ntohs(servaddr2.sin_port);
-            printf("Client: %d\n", id);
-		    printf("IP: %s\n", ip);
-		    printf("Porta: %u\n", port);
+            // info of client
+            // printf("Client: %d\n", id);
+		    // printf("IP: %s\n", ip);
+		    // printf("Porta: %u\n", port);
+            ticks = time(NULL);
+            // printf("Connection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
+
 
             // Escrevendo no arquivo
             fp = fopen("result.txt", "a+");
@@ -95,10 +99,8 @@ int main (int argc, char **argv) {
             // sprintf(port_str, "%d", port);
             // fputs(port_str, fp);
             // fputs("\n", fp);
+            fprintf(fp, "Connection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
             fclose(fp);
-
-            ticks = time(NULL);
-            printf("Connection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
 
             // Write message
             // snprintf(buf, sizeof(buf), "Hello from server!\nTime: %.24s\r\n", ctime(&ticks));
@@ -120,9 +122,6 @@ int main (int argc, char **argv) {
 
                 // Read command
                 read(connfd, received_msg, MAXLINE);
-
-                // int result;
-                // char Str[MAXLINE];
 
                 fp = fopen("result.txt", "a+");
                 if (fp == NULL) {
@@ -146,8 +145,17 @@ int main (int argc, char **argv) {
 
             // sleep(8);
             ticks = time(NULL);
-            printf("Disconnection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
-            // id++;
+            // printf("Disconnection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
+
+            // Escrevendo no arquivo
+            fp = fopen("result.txt", "a+");
+            if (fp == NULL) {
+                printf("Problemas na CRIACAO do arquivo\n");
+                exit(1);
+            }
+            fprintf(fp, "Disconnection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
+            fclose(fp);
+
             exit(0);
             // close(connfd);
         }
