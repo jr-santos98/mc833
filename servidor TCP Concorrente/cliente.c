@@ -17,7 +17,6 @@ int main(int argc, char **argv) {
     char   error[MAXLINE + 1];
     char   ip[16];
     char   msg[MAXLINE];
-    char   str_M;
     unsigned int port, received_port;
     struct sockaddr_in servaddr;
     socklen_t nAddrLen;
@@ -68,15 +67,9 @@ int main(int argc, char **argv) {
     while ( (n = read(sockfd, recvline, MAXLINE)) > 0) {
         recvline[n] = 0;
         printf("Executando: ");
-        // if (fputs(recvline, stdout) == EOF) {
-        //     perror("fputs error");
-        //     exit(1);
-        // }
-        for (int i=strlen(recvline)-1; i>=0; i--) {
-            str_M = recvline[i];
-            if (str_M > 96 && str_M < 123)
-                str_M = recvline[i] - 32;
-            printf("%c", str_M);
+        if (fputs(recvline, stdout) == EOF) {
+            perror("fputs error");
+            exit(1);
         }
         printf("\n");
 
@@ -105,7 +98,7 @@ int main(int argc, char **argv) {
             exit(1);
         }
         memset(&msg, '\0', sizeof(msg));
-        sleep(rand() % 5);
+        sleep(rand() % 8);
     }
 
     if (n < 0) {

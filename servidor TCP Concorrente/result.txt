@@ -1,150 +1,104 @@
 ---------- Client: 1 ----------
 IP: 127.0.0.1
-Porta: 51284
-Connection Time: Tue Oct 11 12:24:33 2022 from Client 1
----------- Client: 1 ----------
-Result: pwd
-/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+Porta: 36118
+Connection Time: Sat Oct 22 17:31:46 2022 from Client 1
 ---------- Client: 2 ----------
 IP: 127.0.0.1
-Porta: 51296
-Connection Time: Tue Oct 11 12:24:35 2022 from Client 2
----------- Client: 2 ----------
+Porta: 36120
+Connection Time: Sat Oct 22 17:31:46 2022 from Client 2
+---------- Client: 3 ----------
+IP: 127.0.0.1
+Porta: 36136
+Connection Time: Sat Oct 22 17:31:46 2022 from Client 3
+---------- Client: 3 ----------
 Result: pwd
 /home/junior/Documentos/git/mc833/servidor TCP Concorrente
 ---------- Client: 1 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 2 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 3 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
 ---------- Client: 1 ----------
-Result: hostname
-garuda
----------- Client: 3 ----------
-IP: 127.0.0.1
-Porta: 51304
-Connection Time: Tue Oct 11 12:24:37 2022 from Client 3
+Result: df -H
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+dev             8,3G     0  8,3G   0% /dev
+run             8,3G  1,9M  8,3G   1% /run
+/dev/nvme0n1p7  112G   38G   74G  34% /
+tmpfs           8,3G  188M  8,2G   3% /dev/shm
+/dev/loop0      103M  103M     0 100% /var/lib/snapd/snap/hugo/14312
+/dev/loop1       67M   67M     0 100% /var/lib/snapd/snap/core20/1623
+/dev/loop2       51M   51M     0 100% /var/lib/snapd/snap/snapd/17029
+/dev/nvme0n1p7  112G   38G   74G  34% /root
+/dev/nvme0n1p7  112G   38G   74G  34% /srv
+tmpfs           8,3G   28M  8,3G   1% /tmp
+/dev/nvme0n1p7  112G   38G   74G  34% /var/cache
+/dev/nvme0n1p7  112G   38G   74G  34% /var/log
+/dev/nvme0n1p7  112G   38G   74G  34% /var/tmp
+/dev/nvme0n1p6  1,2G  623k  1,2G   1% /boot/efi
+/dev/sda4       348G  4,3G  342G   2% /home
+tmpfs           1,7G   46M  1,7G   3% /run/user/1000
+---------- Client: 2 ----------
+Result: lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0  97,7M  1 loop /var/lib/snapd/snap/hugo/14312
+loop1         7:1    0  63,2M  1 loop /var/lib/snapd/snap/core20/1623
+loop2         7:2    0    48M  1 loop /var/lib/snapd/snap/snapd/17029
+sda           8:0    0 931,5G  0 disk 
+├─sda3        8:3    0   608G  0 part 
+└─sda4        8:4    0 323,5G  0 part /home
+zram0       254:0    0  15,4G  0 disk [SWAP]
+nvme0n1     259:0    0 465,8G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part 
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 358,6G  0 part 
+├─nvme0n1p4 259:4    0   850M  0 part 
+├─nvme0n1p5 259:5    0     1G  0 part 
+├─nvme0n1p6 259:6    0   1,1G  0 part /boot/efi
+└─nvme0n1p7 259:7    0   104G  0 part /var/tmp
+                                      /var/log
+                                      /var/cache
+                                      /srv
+                                      /root
+                                      /
 ---------- Client: 3 ----------
 Result: pwd
 /home/junior/Documentos/git/mc833/servidor TCP Concorrente
 ---------- Client: 2 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
+Result: hostname
+garuda
 ---------- Client: 1 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
+Result: lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0  97,7M  1 loop /var/lib/snapd/snap/hugo/14312
+loop1         7:1    0  63,2M  1 loop /var/lib/snapd/snap/core20/1623
+loop2         7:2    0    48M  1 loop /var/lib/snapd/snap/snapd/17029
+sda           8:0    0 931,5G  0 disk 
+├─sda3        8:3    0   608G  0 part 
+└─sda4        8:4    0 323,5G  0 part /home
+zram0       254:0    0  15,4G  0 disk [SWAP]
+nvme0n1     259:0    0 465,8G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part 
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 358,6G  0 part 
+├─nvme0n1p4 259:4    0   850M  0 part 
+├─nvme0n1p5 259:5    0     1G  0 part 
+├─nvme0n1p6 259:6    0   1,1G  0 part /boot/efi
+└─nvme0n1p7 259:7    0   104G  0 part /var/tmp
+                                      /var/log
+                                      /var/cache
+                                      /srv
+                                      /root
+                                      /
+---------- Client: 3 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:32:00 2022 from Client 3
+---------- Client: 2 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:32:00 2022 from Client 2
 ---------- Client: 1 ----------
 Result: exit
-Disconnection Time: Tue Oct 11 12:24:39 2022 from Client 1
----------- Client: 2 ----------
-Result: hostname
-garuda
----------- Client: 3 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
----------- Client: 4 ----------
-IP: 127.0.0.1
-Porta: 51308
-Connection Time: Tue Oct 11 12:24:41 2022 from Client 4
----------- Client: 4 ----------
-Result: pwd
-/home/junior/Documentos/git/mc833/servidor TCP Concorrente
----------- Client: 3 ----------
-Result: hostname
-garuda
----------- Client: 2 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
----------- Client: 2 ----------
-Result: exit
-Disconnection Time: Tue Oct 11 12:24:41 2022 from Client 2
----------- Client: 3 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
----------- Client: 3 ----------
-Result: exit
-Disconnection Time: Tue Oct 11 12:24:43 2022 from Client 3
----------- Client: 5 ----------
-IP: 127.0.0.1
-Porta: 52216
-Connection Time: Tue Oct 11 12:24:43 2022 from Client 5
----------- Client: 5 ----------
-Result: pwd
-/home/junior/Documentos/git/mc833/servidor TCP Concorrente
----------- Client: 4 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
----------- Client: 4 ----------
-Result: hostname
-garuda
----------- Client: 5 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
----------- Client: 6 ----------
-IP: 127.0.0.1
-Porta: 52232
-Connection Time: Tue Oct 11 12:24:46 2022 from Client 6
----------- Client: 6 ----------
-Result: pwd
-/home/junior/Documentos/git/mc833/servidor TCP Concorrente
----------- Client: 4 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
----------- Client: 4 ----------
-Result: exit
-Disconnection Time: Tue Oct 11 12:24:47 2022 from Client 4
----------- Client: 5 ----------
-Result: hostname
-garuda
----------- Client: 5 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
----------- Client: 5 ----------
-Result: exit
-Disconnection Time: Tue Oct 11 12:24:49 2022 from Client 5
----------- Client: 6 ----------
-Result: ls
-cliente
-cliente.c
-Makefile
-README.md
-result.txt
-servidor
-servidor.c
----------- Client: 6 ----------
-Result: hostname
-garuda
----------- Client: 6 ----------
-Result: uname -a
-Linux garuda 5.19.13-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Tue, 04 Oct 2022 14:37:01 +0000 x86_64 GNU/Linux
----------- Client: 6 ----------
-Result: exit
-Disconnection Time: Tue Oct 11 12:24:52 2022 from Client 6
+Disconnection Time: Sat Oct 22 17:32:00 2022 from Client 1

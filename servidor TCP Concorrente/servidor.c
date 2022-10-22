@@ -13,11 +13,11 @@
 #define MAXLINE 4096
 
 int main (int argc, char **argv) {
-    int    listenfd, connfd, id;
+    int    listenfd, connfd, id, i;
     struct sockaddr_in servaddr;
     struct sockaddr_in servaddr2;
     char   ip[16];
-    char   commands[5][MAXLINE];
+    char   commands[10][MAXLINE];
     char   received_msg[MAXLINE];
     char   error[MAXLINE + 1];
     pid_t pid;
@@ -72,11 +72,12 @@ int main (int argc, char **argv) {
 		    inet_ntop(AF_INET, &servaddr2.sin_addr, ip, sizeof(ip));
 		    port = ntohs(servaddr2.sin_port);
             // info of client
-            // printf("Client: %d\n", id);
-		    // printf("IP: %s\n", ip);
-		    // printf("Porta: %u\n", port);
+            printf("Client: %d\n", id);
+		    printf("IP: %s\n", ip);
+		    printf("Porta: %u\n", port);
             ticks = time(NULL);
-            // printf("Connection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
+            printf("Connection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
+            printf("--------------------\n");
 
 
             // Escrevendo no arquivo
@@ -92,24 +93,25 @@ int main (int argc, char **argv) {
             fclose(fp);
 
             // commands
-            strcpy(commands[0], "pwd\0"); 
-            strcpy(commands[1], "ls\0");
-            strcpy(commands[2], "hostname\0");
-            // commands[3] -> Para entrega
-            strcpy(commands[3], "uname -a\0");
-            // commands[3] -> Para testes
-            // strcpy(commands[3], "neofetch\0");
-            strcpy(commands[4], "exit\0");
+            strcpy(commands[0], "pwd"); 
+            strcpy(commands[1], "ls");
+            strcpy(commands[2], "hostname");
+            strcpy(commands[3], "uname -a");
+            strcpy(commands[4], "lscpu");
+            strcpy(commands[5], "lsblk");
+            strcpy(commands[6], "lsusb");
+            strcpy(commands[7], "lspci");
+            strcpy(commands[8], "df -H");
+            strcpy(commands[9], "exit");
 
             // Send commands
-            for (int i=0; i<5; i++) {
-                // Progress per client
-                printf("Client: %d\n", id);
-		        printf("IP: %s\n", ip);
-		        printf("Porta: %u\n", port);
-                printf("Exec: %s\n", commands[i]);
-                printf("--------------------\n");
-                // Send command[i]
+            for (int j=0; j<4; j++) {
+                srand((int)time(&ticks) % getpid());
+                if (j == 3)
+                    i = 9;
+                else
+                    i = (rand() * strlen(commands[j])) % 9;
+                // Send 3 commands random
                 write(connfd, commands[i], strlen(commands[i]));
 
                 // Read command
@@ -130,7 +132,7 @@ int main (int argc, char **argv) {
             }
 
             ticks = time(NULL);
-            // printf("Disconnection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
+            printf("Disconnection Time: %.24s from Client %d\r\n--------------------\n", ctime(&ticks), id);
 
             // Escrevendo no arquivo
             fp = fopen("result.txt", "a+");
