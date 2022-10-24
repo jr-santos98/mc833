@@ -102,3 +102,1381 @@ Disconnection Time: Sat Oct 22 17:32:00 2022 from Client 2
 ---------- Client: 1 ----------
 Result: exit
 Disconnection Time: Sat Oct 22 17:32:00 2022 from Client 1
+---------- Client: 1 ----------
+IP: 127.0.0.1
+Porta: 55538
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 1
+---------- Client: 2 ----------
+IP: 127.0.0.1
+Porta: 55544
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 2
+---------- Client: 3 ----------
+IP: 127.0.0.1
+Porta: 55556
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 3
+---------- Client: 4 ----------
+IP: 127.0.0.1
+Porta: 55564
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 4
+---------- Client: 5 ----------
+IP: 127.0.0.1
+Porta: 55572
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 5
+---------- Client: 6 ----------
+IP: 127.0.0.1
+Porta: 55574
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 6
+---------- Client: 7 ----------
+IP: 127.0.0.1
+Porta: 55584
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 7
+---------- Client: 8 ----------
+IP: 127.0.0.1
+Porta: 55598
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 8
+---------- Client: 9 ----------
+IP: 127.0.0.1
+Porta: 55600
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 9
+---------- Client: 2 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 10 ----------
+IP: 127.0.0.1
+Porta: 55614
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 10
+---------- Client: 6 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 3 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 11 ----------
+IP: 127.0.0.1
+Porta: 55628
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 11
+---------- Client: 12 ----------
+IP: 127.0.0.1
+Porta: 55638
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 12
+---------- Client: 13 ----------
+IP: 127.0.0.1
+Porta: 55652
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 13
+---------- Client: 14 ----------
+IP: 127.0.0.1
+Porta: 55660
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 14
+---------- Client: 15 ----------
+IP: 127.0.0.1
+Porta: 55674
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 15
+---------- Client: 7 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 17 ----------
+IP: 127.0.0.1
+Porta: 55694
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 17
+---------- Client: 19 ----------
+IP: 127.0.0.1
+Porta: 55712
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 19
+---------- Client: 20 ----------
+IP: 127.0.0.1
+Porta: 55726
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 20
+---------- Client: 18 ----------
+IP: 127.0.0.1
+Porta: 55706
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 18
+---------- Client: 21 ----------
+IP: 127.0.0.1
+Porta: 55736
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 21
+---------- Client: 16 ----------
+IP: 127.0.0.1
+Porta: 55686
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 16
+---------- Client: 22 ----------
+IP: 127.0.0.1
+Porta: 55738
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 22
+---------- Client: 24 ----------
+IP: 127.0.0.1
+Porta: 55752
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 24
+---------- Client: 23 ----------
+IP: 127.0.0.1
+Porta: 55748
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 23
+---------- Client: 13 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 15 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 14 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 4 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 8 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 10 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 12 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 9 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 25 ----------
+IP: 127.0.0.1
+Porta: 55766
+Connection Time: Sat Oct 22 17:38:38 2022 from Client 25
+---------- Client: 16 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 18 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 1 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 17 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 5 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 22 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 23 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 11 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 19 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 25 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 24 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 20 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 21 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 6 ----------
+Result: hostname
+garuda
+---------- Client: 3 ----------
+Result: df -H
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+dev             8,3G     0  8,3G   0% /dev
+run             8,3G  1,9M  8,3G   1% /run
+/dev/nvme0n1p7  112G   38G   74G  34% /
+tmpfs           8,3G  133M  8,2G   2% /dev/shm
+/dev/loop0      103M  103M     0 100% /var/lib/snapd/snap/hugo/14312
+/dev/loop1       67M   67M     0 100% /var/lib/snapd/snap/core20/1623
+/dev/loop2       51M   51M     0 100% /var/lib/snapd/snap/snapd/17029
+/dev/nvme0n1p7  112G   38G   74G  34% /root
+/dev/nvme0n1p7  112G   38G   74G  34% /srv
+tmpfs           8,3G   26M  8,3G   1% /tmp
+/dev/nvme0n1p7  112G   38G   74G  34% /var/cache
+/dev/nvme0n1p7  112G   38G   74G  34% /var/log
+/dev/nvme0n1p7  112G   38G   74G  34% /var/tmp
+/dev/nvme0n1p6  1,2G  623k  1,2G   1% /boot/efi
+/dev/sda4       348G  4,2G  342G   2% /home
+tmpfs           1,7G   46M  1,7G   3% /run/user/1000
+---------- Client: 23 ----------
+Result: hostname
+garuda
+---------- Client: 2 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 11 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 7 ----------
+Result: lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0  97,7M  1 loop /var/lib/snapd/snap/hugo/14312
+loop1         7:1    0  63,2M  1 loop /var/lib/snapd/snap/core20/1623
+loop2         7:2    0    48M  1 loop /var/lib/snapd/snap/snapd/17029
+sda           8:0    0 931,5G  0 disk 
+├─sda3        8:3    0   608G  0 part 
+└─sda4        8:4    0 323,5G  0 part /home
+zram0       254:0    0  15,4G  0 disk [SWAP]
+nvme0n1     259:0    0 465,8G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part 
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 358,6G  0 part 
+├─nvme0n1p4 259:4    0   850M  0 part 
+├─nvme0n1p5 259:5    0     1G  0 part 
+├─nvme0n1p6 259:6    0   1,1G  0 part /boot/efi
+└─nvme0n1p7 259:7    0   104G  0 part /var/tmp
+                                      /var/log
+                                      /var/cache
+                                      /srv
+                                      /root
+                                      /
+---------- Client: 21 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 4 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 9 ----------
+Result: hostname
+garuda
+---------- Client: 13 ----------
+Result: df -H
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+dev             8,3G     0  8,3G   0% /dev
+run             8,3G  1,9M  8,3G   1% /run
+/dev/nvme0n1p7  112G   38G   74G  34% /
+tmpfs           8,3G  133M  8,2G   2% /dev/shm
+/dev/loop0      103M  103M     0 100% /var/lib/snapd/snap/hugo/14312
+/dev/loop1       67M   67M     0 100% /var/lib/snapd/snap/core20/1623
+/dev/loop2       51M   51M     0 100% /var/lib/snapd/snap/snapd/17029
+/dev/nvme0n1p7  112G   38G   74G  34% /root
+/dev/nvme0n1p7  112G   38G   74G  34% /srv
+tmpfs           8,3G   26M  8,3G   1% /tmp
+/dev/nvme0n1p7  112G   38G   74G  34% /var/cache
+/dev/nvme0n1p7  112G   38G   74G  34% /var/log
+/dev/nvme0n1p7  112G   38G   74G  34% /var/tmp
+/dev/nvme0n1p6  1,2G  623k  1,2G   1% /boot/efi
+/dev/sda4       348G  4,2G  342G   2% /home
+tmpfs           1,7G   46M  1,7G   3% /run/user/1000
+---------- Client: 20 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 25 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 8 ----------
+Result: lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0  97,7M  1 loop /var/lib/snapd/snap/hugo/14312
+loop1         7:1    0  63,2M  1 loop /var/lib/snapd/snap/core20/1623
+loop2         7:2    0    48M  1 loop /var/lib/snapd/snap/snapd/17029
+sda           8:0    0 931,5G  0 disk 
+├─sda3        8:3    0   608G  0 part 
+└─sda4        8:4    0 323,5G  0 part /home
+zram0       254:0    0  15,4G  0 disk [SWAP]
+nvme0n1     259:0    0 465,8G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part 
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 358,6G  0 part 
+├─nvme0n1p4 259:4    0   850M  0 part 
+├─nvme0n1p5 259:5    0     1G  0 part 
+├─nvme0n1p6 259:6    0   1,1G  0 part /boot/efi
+└─nvme0n1p7 259:7    0   104G  0 part /var/tmp
+                                      /var/log
+                                      /var/cache
+                                      /srv
+                                      /root
+                                      /
+---------- Client: 14 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 15 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 17 ----------
+Result: hostname
+garuda
+---------- Client: 12 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 1 ----------
+Result: lscpu
+Arquitetura:                       x86_64
+Modo(s) operacional da CPU:        32-bit, 64-bit
+Tamanhos de endereço:              39 bits physical, 48 bits virtual
+Ordem dos bytes:                   Little Endian
+CPU(s):                            8
+Lista de CPU(s) on-line:           0-7
+ID de fornecedor:                  GenuineIntel
+Nome do modelo:                    Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+Família da CPU:                    6
+Modelo:                            142
+Thread(s) per núcleo:              2
+Núcleo(s) por soquete:             4
+Soquete(s):                        1
+Step:                              12
+CPU(s) scaling MHz:                60%
+CPU MHz máx.:                      4900,0000
+CPU MHz mín.:                      400,0000
+BogoMIPS:                          4599,93
+Opções:                            fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+Virtualização:                     VT-x
+cache de L1d:                      128 KiB (4 instâncias)
+cache de L1i:                      128 KiB (4 instâncias)
+cache de L2:                       1 MiB (4 instâncias)
+cache de L3:                       8 MiB (1 instância)
+Nó(s) de NUMA:                     1
+CPU(s) de nó0 NUMA:                0-7
+Vulnerabilidade Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerabilidade L1tf:              Not affected
+Vulnerabilidade Mds:               Not affected
+Vulnerabilidade Meltdown:          Not affected
+Vulnerabilidade Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerabilidade Retbleed:          Mitigation; Enhanced IBRS
+Vulnerabilidade Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerabilidade Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerabilidade Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence
+Vulnerabilidade Srbds:             Mitigation; Microcode
+Vulnerabilidade Tsx async abort:   Not affected
+---------- Client: 22 ----------
+Result: lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0  97,7M  1 loop /var/lib/snapd/snap/hugo/14312
+loop1         7:1    0  63,2M  1 loop /var/lib/snapd/snap/core20/1623
+loop2         7:2    0    48M  1 loop /var/lib/snapd/snap/snapd/17029
+sda           8:0    0 931,5G  0 disk 
+├─sda3        8:3    0   608G  0 part 
+└─sda4        8:4    0 323,5G  0 part /home
+zram0       254:0    0  15,4G  0 disk [SWAP]
+nvme0n1     259:0    0 465,8G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part 
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 358,6G  0 part 
+├─nvme0n1p4 259:4    0   850M  0 part 
+├─nvme0n1p5 259:5    0     1G  0 part 
+├─nvme0n1p6 259:6    0   1,1G  0 part /boot/efi
+└─nvme0n1p7 259:7    0   104G  0 part /var/tmp
+                                      /var/log
+                                      /var/cache
+                                      /srv
+                                      /root
+                                      /
+---------- Client: 19 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 10 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 18 ----------
+Result: df -H
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+dev             8,3G     0  8,3G   0% /dev
+run             8,3G  1,9M  8,3G   1% /run
+/dev/nvme0n1p7  112G   38G   74G  34% /
+tmpfs           8,3G  133M  8,2G   2% /dev/shm
+/dev/loop0      103M  103M     0 100% /var/lib/snapd/snap/hugo/14312
+/dev/loop1       67M   67M     0 100% /var/lib/snapd/snap/core20/1623
+/dev/loop2       51M   51M     0 100% /var/lib/snapd/snap/snapd/17029
+/dev/nvme0n1p7  112G   38G   74G  34% /root
+/dev/nvme0n1p7  112G   38G   74G  34% /srv
+tmpfs           8,3G   26M  8,3G   1% /tmp
+/dev/nvme0n1p7  112G   38G   74G  34% /var/cache
+/dev/nvme0n1p7  112G   38G   74G  34% /var/log
+/dev/nvme0n1p7  112G   38G   74G  34% /var/tmp
+/dev/nvme0n1p6  1,2G  623k  1,2G   1% /boot/efi
+/dev/sda4       348G  4,2G  342G   2% /home
+tmpfs           1,7G   46M  1,7G   3% /run/user/1000
+---------- Client: 16 ----------
+Result: df -H
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+dev             8,3G     0  8,3G   0% /dev
+run             8,3G  1,9M  8,3G   1% /run
+/dev/nvme0n1p7  112G   38G   74G  34% /
+tmpfs           8,3G  133M  8,2G   2% /dev/shm
+/dev/loop0      103M  103M     0 100% /var/lib/snapd/snap/hugo/14312
+/dev/loop1       67M   67M     0 100% /var/lib/snapd/snap/core20/1623
+/dev/loop2       51M   51M     0 100% /var/lib/snapd/snap/snapd/17029
+/dev/nvme0n1p7  112G   38G   74G  34% /root
+/dev/nvme0n1p7  112G   38G   74G  34% /srv
+tmpfs           8,3G   26M  8,3G   1% /tmp
+/dev/nvme0n1p7  112G   38G   74G  34% /var/cache
+/dev/nvme0n1p7  112G   38G   74G  34% /var/log
+/dev/nvme0n1p7  112G   38G   74G  34% /var/tmp
+/dev/nvme0n1p6  1,2G  623k  1,2G   1% /boot/efi
+/dev/sda4       348G  4,2G  342G   2% /home
+tmpfs           1,7G   46M  1,7G   3% /run/user/1000
+---------- Client: 5 ----------
+Result: lspci
+00:00.0 Host bridge: Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller (rev 0c)
+00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
+00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 0c)
+00:12.0 Signal processing controller: Intel Corporation Comet Lake Thermal Subsytem
+00:14.0 USB controller: Intel Corporation Comet Lake PCH-LP USB 3.1 xHCI Host Controller
+00:14.2 RAM memory: Intel Corporation Comet Lake PCH-LP Shared SRAM
+00:14.3 Network controller: Intel Corporation Comet Lake PCH-LP CNVi WiFi
+00:15.0 Serial bus controller: Intel Corporation Serial IO I2C Host Controller
+00:16.0 Communication controller: Intel Corporation Comet Lake Management Engine Interface
+00:17.0 SATA controller: Intel Corporation Comet Lake SATA AHCI Controller
+00:1c.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #5 (rev f0)
+00:1d.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #10 (rev f0)
+00:1d.4 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #13 (rev f0)
+00:1f.0 ISA bridge: Intel Corporation Comet Lake PCH-LP LPC Premium Controller/eSPI Controller
+00:1f.3 Multimedia audio controller: Intel Corporation Comet Lake PCH-LP cAVS
+00:1f.4 SMBus: Intel Corporation Comet Lake PCH-LP SMBus Host Controller
+00:1f.5 Serial bus controller: Intel Corporation Comet Lake SPI (flash) Controller
+01:00.0 3D controller: NVIDIA Corporation GM108M [GeForce MX110] (rev a2)
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+03:00.0 Non-Volatile memory controller: Kingston Technology Company, Inc. Device 500f (rev 03)
+---------- Client: 24 ----------
+Result: lspci
+00:00.0 Host bridge: Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller (rev 0c)
+00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
+00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 0c)
+00:12.0 Signal processing controller: Intel Corporation Comet Lake Thermal Subsytem
+00:14.0 USB controller: Intel Corporation Comet Lake PCH-LP USB 3.1 xHCI Host Controller
+00:14.2 RAM memory: Intel Corporation Comet Lake PCH-LP Shared SRAM
+00:14.3 Network controller: Intel Corporation Comet Lake PCH-LP CNVi WiFi
+00:15.0 Serial bus controller: Intel Corporation Serial IO I2C Host Controller
+00:16.0 Communication controller: Intel Corporation Comet Lake Management Engine Interface
+00:17.0 SATA controller: Intel Corporation Comet Lake SATA AHCI Controller
+00:1c.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #5 (rev f0)
+00:1d.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #10 (rev f0)
+00:1d.4 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #13 (rev f0)
+00:1f.0 ISA bridge: Intel Corporation Comet Lake PCH-LP LPC Premium Controller/eSPI Controller
+00:1f.3 Multimedia audio controller: Intel Corporation Comet Lake PCH-LP cAVS
+00:1f.4 SMBus: Intel Corporation Comet Lake PCH-LP SMBus Host Controller
+00:1f.5 Serial bus controller: Intel Corporation Comet Lake SPI (flash) Controller
+01:00.0 3D controller: NVIDIA Corporation GM108M [GeForce MX110] (rev a2)
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+03:00.0 Non-Volatile memory controller: Kingston Technology Company, Inc. Device 500f (rev 03)
+---------- Client: 6 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 3 ----------
+Result: lscpu
+Arquitetura:                       x86_64
+Modo(s) operacional da CPU:        32-bit, 64-bit
+Tamanhos de endereço:              39 bits physical, 48 bits virtual
+Ordem dos bytes:                   Little Endian
+CPU(s):                            8
+Lista de CPU(s) on-line:           0-7
+ID de fornecedor:                  GenuineIntel
+Nome do modelo:                    Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+Família da CPU:                    6
+Modelo:                            142
+Thread(s) per núcleo:              2
+Núcleo(s) por soquete:             4
+Soquete(s):                        1
+Step:                              12
+CPU(s) scaling MHz:                42%
+CPU MHz máx.:                      4900,0000
+CPU MHz mín.:                      400,0000
+BogoMIPS:                          4599,93
+Opções:                            fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+Virtualização:                     VT-x
+cache de L1d:                      128 KiB (4 instâncias)
+cache de L1i:                      128 KiB (4 instâncias)
+cache de L2:                       1 MiB (4 instâncias)
+cache de L3:                       8 MiB (1 instância)
+Nó(s) de NUMA:                     1
+CPU(s) de nó0 NUMA:                0-7
+Vulnerabilidade Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerabilidade L1tf:              Not affected
+Vulnerabilidade Mds:               Not affected
+Vulnerabilidade Meltdown:          Not affected
+Vulnerabilidade Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerabilidade Retbleed:          Mitigation; Enhanced IBRS
+Vulnerabilidade Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerabilidade Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerabilidade Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence
+Vulnerabilidade Srbds:             Mitigation; Microcode
+Vulnerabilidade Tsx async abort:   Not affected
+---------- Client: 2 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 21 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 4 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 23 ----------
+Result: lscpu
+Arquitetura:                       x86_64
+Modo(s) operacional da CPU:        32-bit, 64-bit
+Tamanhos de endereço:              39 bits physical, 48 bits virtual
+Ordem dos bytes:                   Little Endian
+CPU(s):                            8
+Lista de CPU(s) on-line:           0-7
+ID de fornecedor:                  GenuineIntel
+Nome do modelo:                    Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+Família da CPU:                    6
+Modelo:                            142
+Thread(s) per núcleo:              2
+Núcleo(s) por soquete:             4
+Soquete(s):                        1
+Step:                              12
+CPU(s) scaling MHz:                55%
+CPU MHz máx.:                      4900,0000
+CPU MHz mín.:                      400,0000
+BogoMIPS:                          4599,93
+Opções:                            fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+Virtualização:                     VT-x
+cache de L1d:                      128 KiB (4 instâncias)
+cache de L1i:                      128 KiB (4 instâncias)
+cache de L2:                       1 MiB (4 instâncias)
+cache de L3:                       8 MiB (1 instância)
+Nó(s) de NUMA:                     1
+CPU(s) de nó0 NUMA:                0-7
+Vulnerabilidade Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerabilidade L1tf:              Not affected
+Vulnerabilidade Mds:               Not affected
+Vulnerabilidade Meltdown:          Not affected
+Vulnerabilidade Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerabilidade Retbleed:          Mitigation; Enhanced IBRS
+Vulnerabilidade Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerabilidade Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerabilidade Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence
+Vulnerabilidade Srbds:             Mitigation; Microcode
+Vulnerabilidade Tsx async abort:   Not affected
+---------- Client: 8 ----------
+Result: hostname
+garuda
+---------- Client: 25 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 13 ----------
+Result: lscpu
+Arquitetura:                       x86_64
+Modo(s) operacional da CPU:        32-bit, 64-bit
+Tamanhos de endereço:              39 bits physical, 48 bits virtual
+Ordem dos bytes:                   Little Endian
+CPU(s):                            8
+Lista de CPU(s) on-line:           0-7
+ID de fornecedor:                  GenuineIntel
+Nome do modelo:                    Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+Família da CPU:                    6
+Modelo:                            142
+Thread(s) per núcleo:              2
+Núcleo(s) por soquete:             4
+Soquete(s):                        1
+Step:                              12
+CPU(s) scaling MHz:                67%
+CPU MHz máx.:                      4900,0000
+CPU MHz mín.:                      400,0000
+BogoMIPS:                          4599,93
+Opções:                            fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+Virtualização:                     VT-x
+cache de L1d:                      128 KiB (4 instâncias)
+cache de L1i:                      128 KiB (4 instâncias)
+cache de L2:                       1 MiB (4 instâncias)
+cache de L3:                       8 MiB (1 instância)
+Nó(s) de NUMA:                     1
+CPU(s) de nó0 NUMA:                0-7
+Vulnerabilidade Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerabilidade L1tf:              Not affected
+Vulnerabilidade Mds:               Not affected
+Vulnerabilidade Meltdown:          Not affected
+Vulnerabilidade Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerabilidade Retbleed:          Mitigation; Enhanced IBRS
+Vulnerabilidade Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerabilidade Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerabilidade Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence
+Vulnerabilidade Srbds:             Mitigation; Microcode
+Vulnerabilidade Tsx async abort:   Not affected
+---------- Client: 9 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 14 ----------
+Result: df -H
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+dev             8,3G     0  8,3G   0% /dev
+run             8,3G  1,9M  8,3G   1% /run
+/dev/nvme0n1p7  112G   38G   74G  34% /
+tmpfs           8,3G  133M  8,2G   2% /dev/shm
+/dev/loop0      103M  103M     0 100% /var/lib/snapd/snap/hugo/14312
+/dev/loop1       67M   67M     0 100% /var/lib/snapd/snap/core20/1623
+/dev/loop2       51M   51M     0 100% /var/lib/snapd/snap/snapd/17029
+/dev/nvme0n1p7  112G   38G   74G  34% /root
+/dev/nvme0n1p7  112G   38G   74G  34% /srv
+tmpfs           8,3G   26M  8,3G   1% /tmp
+/dev/nvme0n1p7  112G   38G   74G  34% /var/cache
+/dev/nvme0n1p7  112G   38G   74G  34% /var/log
+/dev/nvme0n1p7  112G   38G   74G  34% /var/tmp
+/dev/nvme0n1p6  1,2G  623k  1,2G   1% /boot/efi
+/dev/sda4       348G  4,2G  342G   2% /home
+tmpfs           1,7G   46M  1,7G   3% /run/user/1000
+---------- Client: 11 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 20 ----------
+Result: lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0  97,7M  1 loop /var/lib/snapd/snap/hugo/14312
+loop1         7:1    0  63,2M  1 loop /var/lib/snapd/snap/core20/1623
+loop2         7:2    0    48M  1 loop /var/lib/snapd/snap/snapd/17029
+sda           8:0    0 931,5G  0 disk 
+├─sda3        8:3    0   608G  0 part 
+└─sda4        8:4    0 323,5G  0 part /home
+zram0       254:0    0  15,4G  0 disk [SWAP]
+nvme0n1     259:0    0 465,8G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part 
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 358,6G  0 part 
+├─nvme0n1p4 259:4    0   850M  0 part 
+├─nvme0n1p5 259:5    0     1G  0 part 
+├─nvme0n1p6 259:6    0   1,1G  0 part /boot/efi
+└─nvme0n1p7 259:7    0   104G  0 part /var/tmp
+                                      /var/log
+                                      /var/cache
+                                      /srv
+                                      /root
+                                      /
+---------- Client: 1 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 15 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 17 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 22 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 19 ----------
+Result: hostname
+garuda
+---------- Client: 10 ----------
+Result: hostname
+garuda
+---------- Client: 18 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 7 ----------
+Result: lspci
+00:00.0 Host bridge: Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller (rev 0c)
+00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
+00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 0c)
+00:12.0 Signal processing controller: Intel Corporation Comet Lake Thermal Subsytem
+00:14.0 USB controller: Intel Corporation Comet Lake PCH-LP USB 3.1 xHCI Host Controller
+00:14.2 RAM memory: Intel Corporation Comet Lake PCH-LP Shared SRAM
+00:14.3 Network controller: Intel Corporation Comet Lake PCH-LP CNVi WiFi
+00:15.0 Serial bus controller: Intel Corporation Serial IO I2C Host Controller
+00:16.0 Communication controller: Intel Corporation Comet Lake Management Engine Interface
+00:17.0 SATA controller: Intel Corporation Comet Lake SATA AHCI Controller
+00:1c.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #5 (rev f0)
+00:1d.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #10 (rev f0)
+00:1d.4 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #13 (rev f0)
+00:1f.0 ISA bridge: Intel Corporation Comet Lake PCH-LP LPC Premium Controller/eSPI Controller
+00:1f.3 Multimedia audio controller: Intel Corporation Comet Lake PCH-LP cAVS
+00:1f.4 SMBus: Intel Corporation Comet Lake PCH-LP SMBus Host Controller
+00:1f.5 Serial bus controller: Intel Corporation Comet Lake SPI (flash) Controller
+01:00.0 3D controller: NVIDIA Corporation GM108M [GeForce MX110] (rev a2)
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+03:00.0 Non-Volatile memory controller: Kingston Technology Company, Inc. Device 500f (rev 03)
+---------- Client: 12 ----------
+Result: lscpu
+Arquitetura:                       x86_64
+Modo(s) operacional da CPU:        32-bit, 64-bit
+Tamanhos de endereço:              39 bits physical, 48 bits virtual
+Ordem dos bytes:                   Little Endian
+CPU(s):                            8
+Lista de CPU(s) on-line:           0-7
+ID de fornecedor:                  GenuineIntel
+Nome do modelo:                    Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+Família da CPU:                    6
+Modelo:                            142
+Thread(s) per núcleo:              2
+Núcleo(s) por soquete:             4
+Soquete(s):                        1
+Step:                              12
+CPU(s) scaling MHz:                69%
+CPU MHz máx.:                      4900,0000
+CPU MHz mín.:                      400,0000
+BogoMIPS:                          4599,93
+Opções:                            fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+Virtualização:                     VT-x
+cache de L1d:                      128 KiB (4 instâncias)
+cache de L1i:                      128 KiB (4 instâncias)
+cache de L2:                       1 MiB (4 instâncias)
+cache de L3:                       8 MiB (1 instância)
+Nó(s) de NUMA:                     1
+CPU(s) de nó0 NUMA:                0-7
+Vulnerabilidade Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerabilidade L1tf:              Not affected
+Vulnerabilidade Mds:               Not affected
+Vulnerabilidade Meltdown:          Not affected
+Vulnerabilidade Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerabilidade Retbleed:          Mitigation; Enhanced IBRS
+Vulnerabilidade Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerabilidade Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerabilidade Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence
+Vulnerabilidade Srbds:             Mitigation; Microcode
+Vulnerabilidade Tsx async abort:   Not affected
+---------- Client: 16 ----------
+Result: lscpu
+Arquitetura:                       x86_64
+Modo(s) operacional da CPU:        32-bit, 64-bit
+Tamanhos de endereço:              39 bits physical, 48 bits virtual
+Ordem dos bytes:                   Little Endian
+CPU(s):                            8
+Lista de CPU(s) on-line:           0-7
+ID de fornecedor:                  GenuineIntel
+Nome do modelo:                    Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+Família da CPU:                    6
+Modelo:                            142
+Thread(s) per núcleo:              2
+Núcleo(s) por soquete:             4
+Soquete(s):                        1
+Step:                              12
+CPU(s) scaling MHz:                69%
+CPU MHz máx.:                      4900,0000
+CPU MHz mín.:                      400,0000
+BogoMIPS:                          4599,93
+Opções:                            fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+Virtualização:                     VT-x
+cache de L1d:                      128 KiB (4 instâncias)
+cache de L1i:                      128 KiB (4 instâncias)
+cache de L2:                       1 MiB (4 instâncias)
+cache de L3:                       8 MiB (1 instância)
+Nó(s) de NUMA:                     1
+CPU(s) de nó0 NUMA:                0-7
+Vulnerabilidade Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerabilidade L1tf:              Not affected
+Vulnerabilidade Mds:               Not affected
+Vulnerabilidade Meltdown:          Not affected
+Vulnerabilidade Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerabilidade Retbleed:          Mitigation; Enhanced IBRS
+Vulnerabilidade Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerabilidade Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerabilidade Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence
+Vulnerabilidade Srbds:             Mitigation; Microcode
+Vulnerabilidade Tsx async abort:   Not affected
+---------- Client: 5 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 24 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 6 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 6
+---------- Client: 3 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 3
+---------- Client: 2 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 2
+---------- Client: 4 ----------
+Result: exit
+---------- Client: 21 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 4
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 21
+---------- Client: 23 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 23
+---------- Client: 8 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 8
+---------- Client: 25 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 25
+---------- Client: 13 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 13
+---------- Client: 14 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 14
+---------- Client: 9 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 9
+---------- Client: 20 ----------
+Result: exit
+---------- Client: 1 ----------
+Result: exit
+---------- Client: 11 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 20
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 1
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 11
+---------- Client: 15 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 15
+---------- Client: 17 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 17
+---------- Client: 22 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 22
+---------- Client: 19 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 19
+---------- Client: 10 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 10
+---------- Client: 18 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 18
+---------- Client: 7 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 7
+---------- Client: 12 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 12
+---------- Client: 16 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 16
+---------- Client: 5 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 5
+---------- Client: 24 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 17:38:52 2022 from Client 24
+---------- Client: 1 ----------
+IP: 127.0.0.1
+Porta: 60512
+Connection Time: Sat Oct 22 18:06:42 2022 from Client 1
+---------- Client: 1 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 1 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 1 ----------
+Result: hostname
+garuda
+---------- Client: 1 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:06:56 2022 from Client 1
+---------- Client: 1 ----------
+IP: 127.0.0.1
+Porta: 46950
+Connection Time: Sat Oct 22 18:08:01 2022 from Client 1
+---------- Client: 2 ----------
+IP: 127.0.0.1
+Porta: 46954
+Connection Time: Sat Oct 22 18:08:01 2022 from Client 2
+---------- Client: 3 ----------
+IP: 127.0.0.1
+Porta: 46956
+Connection Time: Sat Oct 22 18:08:01 2022 from Client 3
+---------- Client: 1 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 3 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 2 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 3 ----------
+Result: df -H
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+dev             8,3G     0  8,3G   0% /dev
+run             8,3G  1,9M  8,3G   1% /run
+/dev/nvme0n1p7  112G   38G   74G  34% /
+tmpfs           8,3G  257M  8,1G   4% /dev/shm
+/dev/loop0      103M  103M     0 100% /var/lib/snapd/snap/hugo/14312
+/dev/loop1       67M   67M     0 100% /var/lib/snapd/snap/core20/1623
+/dev/loop2       51M   51M     0 100% /var/lib/snapd/snap/snapd/17029
+/dev/nvme0n1p7  112G   38G   74G  34% /root
+/dev/nvme0n1p7  112G   38G   74G  34% /srv
+tmpfs           8,3G   27M  8,3G   1% /tmp
+/dev/nvme0n1p7  112G   38G   74G  34% /var/cache
+/dev/nvme0n1p7  112G   38G   74G  34% /var/log
+/dev/nvme0n1p7  112G   38G   74G  34% /var/tmp
+/dev/nvme0n1p6  1,2G  623k  1,2G   1% /boot/efi
+/dev/sda4       348G  4,3G  342G   2% /home
+tmpfs           1,7G   46M  1,7G   3% /run/user/1000
+---------- Client: 1 ----------
+Result: lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0  97,7M  1 loop /var/lib/snapd/snap/hugo/14312
+loop1         7:1    0  63,2M  1 loop /var/lib/snapd/snap/core20/1623
+loop2         7:2    0    48M  1 loop /var/lib/snapd/snap/snapd/17029
+sda           8:0    0 931,5G  0 disk 
+├─sda3        8:3    0   608G  0 part 
+└─sda4        8:4    0 323,5G  0 part /home
+zram0       254:0    0  15,4G  0 disk [SWAP]
+nvme0n1     259:0    0 465,8G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part 
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 358,6G  0 part 
+├─nvme0n1p4 259:4    0   850M  0 part 
+├─nvme0n1p5 259:5    0     1G  0 part 
+├─nvme0n1p6 259:6    0   1,1G  0 part /boot/efi
+└─nvme0n1p7 259:7    0   104G  0 part /var/tmp
+                                      /var/log
+                                      /var/cache
+                                      /srv
+                                      /root
+                                      /
+---------- Client: 2 ----------
+Result: lspci
+00:00.0 Host bridge: Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller (rev 0c)
+00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
+00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 0c)
+00:12.0 Signal processing controller: Intel Corporation Comet Lake Thermal Subsytem
+00:14.0 USB controller: Intel Corporation Comet Lake PCH-LP USB 3.1 xHCI Host Controller
+00:14.2 RAM memory: Intel Corporation Comet Lake PCH-LP Shared SRAM
+00:14.3 Network controller: Intel Corporation Comet Lake PCH-LP CNVi WiFi
+00:15.0 Serial bus controller: Intel Corporation Serial IO I2C Host Controller
+00:16.0 Communication controller: Intel Corporation Comet Lake Management Engine Interface
+00:17.0 SATA controller: Intel Corporation Comet Lake SATA AHCI Controller
+00:1c.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #5 (rev f0)
+00:1d.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #10 (rev f0)
+00:1d.4 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #13 (rev f0)
+00:1f.0 ISA bridge: Intel Corporation Comet Lake PCH-LP LPC Premium Controller/eSPI Controller
+00:1f.3 Multimedia audio controller: Intel Corporation Comet Lake PCH-LP cAVS
+00:1f.4 SMBus: Intel Corporation Comet Lake PCH-LP SMBus Host Controller
+00:1f.5 Serial bus controller: Intel Corporation Comet Lake SPI (flash) Controller
+01:00.0 3D controller: NVIDIA Corporation GM108M [GeForce MX110] (rev a2)
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+03:00.0 Non-Volatile memory controller: Kingston Technology Company, Inc. Device 500f (rev 03)
+---------- Client: 3 ----------
+Result: ls
+cliente
+cliente.c
+Makefile
+README.md
+result.txt
+servidor
+servidor.c
+---------- Client: 1 ----------
+Result: lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0  97,7M  1 loop /var/lib/snapd/snap/hugo/14312
+loop1         7:1    0  63,2M  1 loop /var/lib/snapd/snap/core20/1623
+loop2         7:2    0    48M  1 loop /var/lib/snapd/snap/snapd/17029
+sda           8:0    0 931,5G  0 disk 
+├─sda3        8:3    0   608G  0 part 
+└─sda4        8:4    0 323,5G  0 part /home
+zram0       254:0    0  15,4G  0 disk [SWAP]
+nvme0n1     259:0    0 465,8G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part 
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 358,6G  0 part 
+├─nvme0n1p4 259:4    0   850M  0 part 
+├─nvme0n1p5 259:5    0     1G  0 part 
+├─nvme0n1p6 259:6    0   1,1G  0 part /boot/efi
+└─nvme0n1p7 259:7    0   104G  0 part /var/tmp
+                                      /var/log
+                                      /var/cache
+                                      /srv
+                                      /root
+                                      /
+---------- Client: 2 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 3 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:08:15 2022 from Client 3
+---------- Client: 1 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:08:15 2022 from Client 1
+---------- Client: 2 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:08:15 2022 from Client 2
+---------- Client: 1 ----------
+IP: 127.0.0.1
+Porta: 44980
+Connection Time: Sat Oct 22 18:11:17 2022 from Client 1
+---------- Client: 1 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 2 ----------
+IP: 127.0.0.1
+Porta: 44964
+Connection Time: Sat Oct 22 18:11:22 2022 from Client 2
+---------- Client: 2 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 1 ----------
+Result: lscpu
+Arquitetura:                       x86_64
+Modo(s) operacional da CPU:        32-bit, 64-bit
+Tamanhos de endereço:              39 bits physical, 48 bits virtual
+Ordem dos bytes:                   Little Endian
+CPU(s):                            8
+Lista de CPU(s) on-line:           0-7
+ID de fornecedor:                  GenuineIntel
+Nome do modelo:                    Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+Família da CPU:                    6
+Modelo:                            142
+Thread(s) per núcleo:              2
+Núcleo(s) por soquete:             4
+Soquete(s):                        1
+Step:                              12
+CPU(s) scaling MHz:                36%
+CPU MHz máx.:                      4900,0000
+CPU MHz mín.:                      400,0000
+BogoMIPS:                          4599,93
+Opções:                            fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+Virtualização:                     VT-x
+cache de L1d:                      128 KiB (4 instâncias)
+cache de L1i:                      128 KiB (4 instâncias)
+cache de L2:                       1 MiB (4 instâncias)
+cache de L3:                       8 MiB (1 instância)
+Nó(s) de NUMA:                     1
+CPU(s) de nó0 NUMA:                0-7
+Vulnerabilidade Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerabilidade L1tf:              Not affected
+Vulnerabilidade Mds:               Not affected
+Vulnerabilidade Meltdown:          Not affected
+Vulnerabilidade Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerabilidade Retbleed:          Mitigation; Enhanced IBRS
+Vulnerabilidade Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerabilidade Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerabilidade Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence
+Vulnerabilidade Srbds:             Mitigation; Microcode
+Vulnerabilidade Tsx async abort:   Not affected
+---------- Client: 3 ----------
+IP: 127.0.0.1
+Porta: 44990
+Connection Time: Sat Oct 22 18:11:27 2022 from Client 3
+---------- Client: 3 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 2 ----------
+Result: lspci
+00:00.0 Host bridge: Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller (rev 0c)
+00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
+00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 0c)
+00:12.0 Signal processing controller: Intel Corporation Comet Lake Thermal Subsytem
+00:14.0 USB controller: Intel Corporation Comet Lake PCH-LP USB 3.1 xHCI Host Controller
+00:14.2 RAM memory: Intel Corporation Comet Lake PCH-LP Shared SRAM
+00:14.3 Network controller: Intel Corporation Comet Lake PCH-LP CNVi WiFi
+00:15.0 Serial bus controller: Intel Corporation Serial IO I2C Host Controller
+00:16.0 Communication controller: Intel Corporation Comet Lake Management Engine Interface
+00:17.0 SATA controller: Intel Corporation Comet Lake SATA AHCI Controller
+00:1c.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #5 (rev f0)
+00:1d.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #10 (rev f0)
+00:1d.4 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #13 (rev f0)
+00:1f.0 ISA bridge: Intel Corporation Comet Lake PCH-LP LPC Premium Controller/eSPI Controller
+00:1f.3 Multimedia audio controller: Intel Corporation Comet Lake PCH-LP cAVS
+00:1f.4 SMBus: Intel Corporation Comet Lake PCH-LP SMBus Host Controller
+00:1f.5 Serial bus controller: Intel Corporation Comet Lake SPI (flash) Controller
+01:00.0 3D controller: NVIDIA Corporation GM108M [GeForce MX110] (rev a2)
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+03:00.0 Non-Volatile memory controller: Kingston Technology Company, Inc. Device 500f (rev 03)
+---------- Client: 1 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 1 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:11:31 2022 from Client 1
+---------- Client: 3 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 2 ----------
+Result: lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0  97,7M  1 loop /var/lib/snapd/snap/hugo/14312
+loop1         7:1    0  63,2M  1 loop /var/lib/snapd/snap/core20/1623
+loop2         7:2    0    48M  1 loop /var/lib/snapd/snap/snapd/17029
+sda           8:0    0 931,5G  0 disk 
+├─sda3        8:3    0   608G  0 part 
+└─sda4        8:4    0 323,5G  0 part /home
+zram0       254:0    0  15,4G  0 disk [SWAP]
+nvme0n1     259:0    0 465,8G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part 
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 358,6G  0 part 
+├─nvme0n1p4 259:4    0   850M  0 part 
+├─nvme0n1p5 259:5    0     1G  0 part 
+├─nvme0n1p6 259:6    0   1,1G  0 part /boot/efi
+└─nvme0n1p7 259:7    0   104G  0 part /var/tmp
+                                      /var/log
+                                      /var/cache
+                                      /srv
+                                      /root
+                                      /
+---------- Client: 2 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:11:36 2022 from Client 2
+---------- Client: 3 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 3 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:11:41 2022 from Client 3
+---------- Client: 4 ----------
+IP: 127.0.0.1
+Porta: 36682
+Connection Time: Sat Oct 22 18:12:02 2022 from Client 4
+---------- Client: 4 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 5 ----------
+IP: 127.0.0.1
+Porta: 36684
+Connection Time: Sat Oct 22 18:12:07 2022 from Client 5
+---------- Client: 5 ----------
+Result: uname -a
+Linux garuda 6.0.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Sat, 15 Oct 2022 14:00:51 +0000 x86_64 GNU/Linux
+---------- Client: 4 ----------
+Result: df -H
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+dev             8,3G     0  8,3G   0% /dev
+run             8,3G  1,9M  8,3G   1% /run
+/dev/nvme0n1p7  112G   38G   74G  34% /
+tmpfs           8,3G  225M  8,1G   3% /dev/shm
+/dev/loop0      103M  103M     0 100% /var/lib/snapd/snap/hugo/14312
+/dev/loop1       67M   67M     0 100% /var/lib/snapd/snap/core20/1623
+/dev/loop2       51M   51M     0 100% /var/lib/snapd/snap/snapd/17029
+/dev/nvme0n1p7  112G   38G   74G  34% /root
+/dev/nvme0n1p7  112G   38G   74G  34% /srv
+tmpfs           8,3G   27M  8,3G   1% /tmp
+/dev/nvme0n1p7  112G   38G   74G  34% /var/cache
+/dev/nvme0n1p7  112G   38G   74G  34% /var/log
+/dev/nvme0n1p7  112G   38G   74G  34% /var/tmp
+/dev/nvme0n1p6  1,2G  623k  1,2G   1% /boot/efi
+/dev/sda4       348G  4,3G  342G   2% /home
+tmpfs           1,7G   46M  1,7G   3% /run/user/1000
+---------- Client: 6 ----------
+IP: 127.0.0.1
+Porta: 36694
+Connection Time: Sat Oct 22 18:12:12 2022 from Client 6
+---------- Client: 6 ----------
+Result: pwd
+/home/junior/Documentos/git/mc833/servidor TCP Concorrente
+---------- Client: 5 ----------
+Result: hostname
+garuda
+---------- Client: 4 ----------
+Result: lspci
+00:00.0 Host bridge: Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller (rev 0c)
+00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
+00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 0c)
+00:12.0 Signal processing controller: Intel Corporation Comet Lake Thermal Subsytem
+00:14.0 USB controller: Intel Corporation Comet Lake PCH-LP USB 3.1 xHCI Host Controller
+00:14.2 RAM memory: Intel Corporation Comet Lake PCH-LP Shared SRAM
+00:14.3 Network controller: Intel Corporation Comet Lake PCH-LP CNVi WiFi
+00:15.0 Serial bus controller: Intel Corporation Serial IO I2C Host Controller
+00:16.0 Communication controller: Intel Corporation Comet Lake Management Engine Interface
+00:17.0 SATA controller: Intel Corporation Comet Lake SATA AHCI Controller
+00:1c.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #5 (rev f0)
+00:1d.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #10 (rev f0)
+00:1d.4 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #13 (rev f0)
+00:1f.0 ISA bridge: Intel Corporation Comet Lake PCH-LP LPC Premium Controller/eSPI Controller
+00:1f.3 Multimedia audio controller: Intel Corporation Comet Lake PCH-LP cAVS
+00:1f.4 SMBus: Intel Corporation Comet Lake PCH-LP SMBus Host Controller
+00:1f.5 Serial bus controller: Intel Corporation Comet Lake SPI (flash) Controller
+01:00.0 3D controller: NVIDIA Corporation GM108M [GeForce MX110] (rev a2)
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+03:00.0 Non-Volatile memory controller: Kingston Technology Company, Inc. Device 500f (rev 03)
+---------- Client: 4 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:12:16 2022 from Client 4
+---------- Client: 6 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 5 ----------
+Result: lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 2232:1080 Silicon Motion Web Camera
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 413c:301b Dell Computer Corp. Universal Bluetooth Receiver
+Bus 001 Device 005: ID 8087:0aaa Intel Corp. Bluetooth 9460/9560 Jefferson Peak (JfP)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+---------- Client: 5 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:12:21 2022 from Client 5
+---------- Client: 6 ----------
+Result: lspci
+00:00.0 Host bridge: Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller (rev 0c)
+00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
+00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 0c)
+00:12.0 Signal processing controller: Intel Corporation Comet Lake Thermal Subsytem
+00:14.0 USB controller: Intel Corporation Comet Lake PCH-LP USB 3.1 xHCI Host Controller
+00:14.2 RAM memory: Intel Corporation Comet Lake PCH-LP Shared SRAM
+00:14.3 Network controller: Intel Corporation Comet Lake PCH-LP CNVi WiFi
+00:15.0 Serial bus controller: Intel Corporation Serial IO I2C Host Controller
+00:16.0 Communication controller: Intel Corporation Comet Lake Management Engine Interface
+00:17.0 SATA controller: Intel Corporation Comet Lake SATA AHCI Controller
+00:1c.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #5 (rev f0)
+00:1d.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #10 (rev f0)
+00:1d.4 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #13 (rev f0)
+00:1f.0 ISA bridge: Intel Corporation Comet Lake PCH-LP LPC Premium Controller/eSPI Controller
+00:1f.3 Multimedia audio controller: Intel Corporation Comet Lake PCH-LP cAVS
+00:1f.4 SMBus: Intel Corporation Comet Lake PCH-LP SMBus Host Controller
+00:1f.5 Serial bus controller: Intel Corporation Comet Lake SPI (flash) Controller
+01:00.0 3D controller: NVIDIA Corporation GM108M [GeForce MX110] (rev a2)
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+03:00.0 Non-Volatile memory controller: Kingston Technology Company, Inc. Device 500f (rev 03)
+---------- Client: 6 ----------
+Result: exit
+Disconnection Time: Sat Oct 22 18:12:26 2022 from Client 6

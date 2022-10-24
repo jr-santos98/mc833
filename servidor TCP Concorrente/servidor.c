@@ -9,11 +9,10 @@
 #include <time.h>
 #include <unistd.h>
 #include <arpa/inet.h>
-#define LISTENQ 10
 #define MAXLINE 4096
 
 int main (int argc, char **argv) {
-    int    listenfd, connfd, id, i;
+    int    listenfd, listenq, connfd, id, i;
     struct sockaddr_in servaddr;
     struct sockaddr_in servaddr2;
     char   ip[16];
@@ -28,10 +27,11 @@ int main (int argc, char **argv) {
     FILE *fp;
     id = 0;
 
-    if (argc != 2) {
+    if (argc != 3) {
         strcpy(error,"uso: ");
         strcat(error,argv[0]);
         strcat(error," <Port>");
+        strcat(error," <Backlog>");
         perror(error);
         exit(1);
     }
@@ -52,10 +52,12 @@ int main (int argc, char **argv) {
         exit(1);
     }
 
-    if (listen(listenfd, LISTENQ) == -1) {
+    listenq = atoi(argv[2]);
+    if (listen(listenfd, listenq) == -1) {
         perror("listen");
         exit(1);
     }
+    sleep(5);
 
     while (1) {
         if ((connfd = accept(listenfd, (struct sockaddr *) NULL, NULL)) == -1 ) {
@@ -63,6 +65,7 @@ int main (int argc, char **argv) {
             exit(1);
         }
         id++;
+        sleep(5);
 
         if( (pid = fork()) == 0) {
             close(listenfd); /* child closes listening socket */
