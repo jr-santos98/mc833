@@ -57,15 +57,14 @@ int main (int argc, char **argv) {
         perror("listen");
         exit(1);
     }
-    sleep(5);
 
     while (1) {
+        sleep(5);
         if ((connfd = accept(listenfd, (struct sockaddr *) NULL, NULL)) == -1 ) {
             perror("accept");
             exit(1);
         }
         id++;
-        sleep(5);
 
         if( (pid = fork()) == 0) {
             close(listenfd); /* child closes listening socket */
