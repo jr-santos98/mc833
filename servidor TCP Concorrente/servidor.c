@@ -3,13 +3,23 @@
 #include <errno.h>
 #include <string.h>
 #include <netdb.h>
-#include <sys/types.h>
 #include <netinet/in.h>
-#include <sys/socket.h>
 #include <time.h>
 #include <unistd.h>
 #include <arpa/inet.h>
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <sys/wait.h>
 #define MAXLINE 4096
+
+void sig_chld(int signo) {
+    pid_t pid;
+    int stat;
+    while ( (pid = waitpid(-1, &stat, WNOHANG)) > 0)
+        printf("child %d terminated\n", pid);
+    return;
+}
 
 int main (int argc, char **argv) {
     int    listenfd, listenq, connfd, id, i;
@@ -58,8 +68,9 @@ int main (int argc, char **argv) {
         exit(1);
     }
 
+    signal (SIGCHLD, sig_chld); /* para chamar waitpid() */
     while (1) {
-        sleep(5);
+        // sleep(5); Not necessery
         if ((connfd = accept(listenfd, (struct sockaddr *) NULL, NULL)) == -1 ) {
             perror("accept");
             exit(1);
