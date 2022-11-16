@@ -22,11 +22,12 @@ void sig_chld(int signo) {
 }
 
 int main (int argc, char **argv) {
-    int    listenfd, listenq, connfd, id, i;
+    int    listenfd, connfd, id;
     struct sockaddr_in servaddr;
     struct sockaddr_in servaddr2;
     char   ip[16];
-    char   commands[10][MAXLINE];
+    char   commands[MAXLINE];
+    char   temp[MAXLINE];
     char   received_msg[MAXLINE];
     char   error[MAXLINE + 1];
     pid_t pid;
@@ -34,7 +35,7 @@ int main (int argc, char **argv) {
     unsigned int port, received_port;
     socklen_t nAddr2Len;
     nAddr2Len = sizeof(struct sockaddr_in);
-    FILE *fp;
+    // FILE *fp;
     id = 0;
 
     if (argc != 2) {
@@ -68,7 +69,6 @@ int main (int argc, char **argv) {
 
     signal (SIGCHLD, sig_chld); /* para chamar waitpid() */
     while (1) {
-        // sleep(5); Not necessery
         if ((connfd = accept(listenfd, (struct sockaddr *) NULL, NULL)) == -1 ) {
             perror("accept");
             exit(1);
@@ -90,54 +90,22 @@ int main (int argc, char **argv) {
             printf("Connection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
             printf("--------------------\n");
 
-
-            // Escrevendo no arquivo
-            fp = fopen("result.txt", "a+");
-            if (fp == NULL) {
-                printf("Problemas na CRIACAO do arquivo\n");
-                exit(1);
-            }
-            fprintf(fp, "---------- Client: %d ----------\n", id);
-            fprintf(fp, "IP: %s\n", ip);
-            fprintf(fp, "Porta: %d\n", port);
-            fprintf(fp, "Connection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
-            fclose(fp);
-
             // commands
-            strcpy(commands[0], "pwd"); 
-            strcpy(commands[1], "ls");
-            strcpy(commands[2], "hostname");
-            strcpy(commands[3], "uname -a");
-            strcpy(commands[4], "lscpu");
-            strcpy(commands[5], "lsblk");
-            strcpy(commands[6], "lsusb");
-            strcpy(commands[7], "lspci");
-            strcpy(commands[8], "df -H");
-            strcpy(commands[9], "exit");
+            strcat(commands, "Hello from server to client in:\n");
+            snprintf(temp, sizeof(temp), "IP: %s\n", ip);
+            strcat(commands, temp);
+            snprintf(temp, sizeof(temp), "Porta: %u\n", port);
+            strcat(commands, temp);
+            snprintf(temp, sizeof(temp), "Time: %.24s\r\n", ctime(&ticks));
+            strcat(commands, temp);
+            
+            write(connfd, commands, strlen(commands));
 
-            // Send commands
-            for (int j=0; j<4; j++) {
-                srand((int)time(&ticks) % getpid());
-                if (j == 3)
-                    i = 9;
-                else
-                    i = (rand() * strlen(commands[j])) % 9;
-                // Send 3 commands random
-                write(connfd, commands[i], strlen(commands[i]));
+            while (read(connfd, received_msg, MAXLINE) != -1) {
+                if (strcmp(received_msg, "END") == 0)
+                    break;
 
-                // Read command
-                read(connfd, received_msg, MAXLINE);
-
-                fp = fopen("result.txt", "a+");
-                if (fp == NULL) {
-                    printf("Problemas na CRIACAO do arquivo\n");
-                    exit(1);
-                }
-
-                fprintf(fp, "---------- Client: %d ----------\n", id);
-                fprintf(fp, "Result: %s\n%s", commands[i], received_msg);
-
-                fclose(fp);
+                write(connfd, received_msg, strlen(received_msg));
 
                 memset(&received_msg, 0, sizeof(received_msg));
             }
@@ -145,14 +113,7 @@ int main (int argc, char **argv) {
             ticks = time(NULL);
             printf("Disconnection Time: %.24s from Client %d\r\n--------------------\n", ctime(&ticks), id);
 
-            // Escrevendo no arquivo
-            fp = fopen("result.txt", "a+");
-            if (fp == NULL) {
-                printf("Problemas na CRIACAO do arquivo\n");
-                exit(1);
-            }
-            fprintf(fp, "Disconnection Time: %.24s from Client %d\r\n", ctime(&ticks), id);
-            fclose(fp);
+            close(connfd);
 
             exit(0);
         }

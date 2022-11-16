@@ -1,4 +1,4 @@
-# Projeto 2 : Servidor TCP Concorrente
+# Projeto 3 : Multiplexação de Entrada/Saída
 
 Esse projeto trata-se de um conjunto de Cliente/Servidor com a finalidade
 de treinar e aperfeiçoar o conhecimento sobre Redes de Computadores.
@@ -13,19 +13,24 @@ Para limpar:
 
 ## Servidor:
 
-uso: `./servidor <Port> <Backlog>`
+uso: `./servidor <Port>`
 
 > O servidor utiliza o endereço localhost como padrão.
 
 ## Cliente:
 
-uso: `./cliente <IPaddress> <Port>`
+uso: `./cliente <IPaddress> <Port_1> <Port_2>`
 
 ## Funcionalidade
 
-O servidor concorrente possui uma lista de comandos que obtem informação nativa do sistema Linux em que o cliente está em execução.
-Após o emparelhamento com o cliente, ele envia 3 desses comandos de forma aleatoria, espera o retorno do comando e salva em "result.txt" com as informações do cliente.
-Ele é capaz de atender a multiplos clientes de forma concorrente, tendo o Backlog informado como parametro.
+O servidor concorrente envia um “Hello” ao cliente, aguarda receber mensagens e as enviam de volta em forma de “eco”.
+Após terminar as mensagens, o servidor finaliza a conexão.
 
-O cliente por sua vez, se conecta com o servidor, rebece 3 comandos para serem executados localmente e encaminha a saida dos comandos ao servidor.
-Terminado essa operação, o cliente é encerrado.
+O cliente por sua vez, trata-se de um Multiplexador de Entrada/Saída, ele se conecta com dois servidores e ainda recebe uma mensagem através do terminal.
+A multiplaxação funciona de forma a permitir que ele consiga alternar entre a leitura de dados de 3 fontes distintas e ao envio de pacotes com dois servidores.
+
+## Exemplo
+
+Execução do cliente, dado a entrada in.txt:
+
+`./cliente 127.0.0.1 3000 3001 < in.txt > out.txt`
